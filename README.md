@@ -49,8 +49,8 @@ Docker Compose
 
 ## Installation / Lancement
 
-### Prérequis
-Docker Compose
+
+Avant de débuter, il faut s'assurer d'avoir installé Docker Compose.
 
 1. Cloner le dépôt
 2. dans le terminal, faire git clone https://github.com/laylashb/MiniBank.git
