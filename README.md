@@ -3,13 +3,13 @@
 
 
 
-Application web simulant une petite banque fonctionnelle
+> Application web simulant une petite banque fonctionnelle
 
-Projet réalisé par : Layla, Sanata, Sandrine
+> Projet réalisé par : Layla, Sanata, Sandrine
 
-Dans le cadre de : Prépa Mastère IPSSI
+> Dans le cadre de : Prépa Mastère IPSSI
 
-Cours supervisé par : Mr. Touil
+> Cours supervisé par : Mr. Touil
 
 
 ## Objectifs
