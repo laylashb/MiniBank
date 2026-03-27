@@ -1,16 +1,15 @@
-<p align="center" style="font-size: 70px; font-weight: bold;">
+<h1 align="center">
   MiniBank 🏦
-</p>
+</h1>
 
 <p align="center">
   <img width="6912" height="3456" alt="MiniBank" src="https://github.com/user-attachments/assets/11bec4af-211b-4d70-936a-e6cdf2b2d73b" />
 </p>
 
-<p align="center" style="font-size: 40px; font-weight: bold;">
+<h2 align="center">
   Bienvenue sur MiniBank !
-</p>
+</h2>
 
-</p>
 > Application web simulant une petite banque fonctionnelle
 
 > Projet réalisé par : Layla, Sanata, Sandrine
