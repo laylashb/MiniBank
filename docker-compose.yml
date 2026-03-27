@@ -20,6 +20,6 @@ services:
       - ./js:/var/www/html/js
       - ./css:/var/www/html/css
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
       - db
