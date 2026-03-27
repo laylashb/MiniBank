@@ -93,16 +93,3 @@ Faites vos modifications, puis commit & push :
   git add .
   git commit -m "Description des modifications"
   git push origin ma-branche
-
-
-
-## Structure du projet 
-
-MiniBank/
-├─ css/           # Styles CSS
-├─ php/           # Pages PHP de l'application
-├─ sql/
-│  ├─ schema.sql  # Structure des tables
-│  └─ data.sql    # Données initiales
-├─ docker-compose.yml
-└─ README.md
