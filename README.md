@@ -1,8 +1,10 @@
 <p align="center" style="font-size: 40px; font-weight: bold;">
- # MiniBank 🏦
+  MiniBank 🏦
 </p>
-<img width="6912" height="3456" alt="MiniBAnk" src="https://github.com/user-attachments/assets/11bec4af-211b-4d70-936a-e6cdf2b2d73b" />
 
+<p align="center">
+  <img width="6912" height="3456" alt="MiniBank" src="https://github.com/user-attachments/assets/11bec4af-211b-4d70-936a-e6cdf2b2d73b" />
+</p>
 
 <p align="center" style="font-size: 30px; font-weight: bold;">
   Bienvenue sur MiniBank !
