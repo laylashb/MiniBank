@@ -6,7 +6,7 @@ Projet réalisé par : Layla, Sanata, Sandrine
 Dans le cadre de : Prépa Mastère IPSSI
 Cours supervisé par : Mr. Touil
 
-1. Contexte & Objectifs
+Contexte & Objectifs
 
 MiniBank est une application Full-Stack permettant de :
 
@@ -16,9 +16,9 @@ Simuler un environnement bancaire réaliste avec dépôts, retraits et suivi de 
 Objectifs pédagogiques :
 
 Technologie	Objectif
-Docker	Conteneuriser et lancer l’application en une seule commande
-SQL	Concevoir un schéma relationnel propre et écrire des requêtes pertinentes
-PHP + CRUD	Implémenter les opérations Create / Read / Update / Delete
-JavaScript	Améliorer l’UX : validation, confirmation, filtre dynamique
-Python	Générer automatiquement un historique de transactions réalistes
-Git	Travailler en branches, merger et résoudre un conflit
+Docker >>> Conteneuriser et lancer l’application en une seule commande
+SQL	>>> Concevoir un schéma relationnel propre et écrire des requêtes pertinentes
+PHP + CRUD	>>> Implémenter les opérations Create / Read / Update / Delete
+JavaScript	>>> Améliorer l’UX : validation, confirmation, filtre dynamique
+Python	>>> Générer automatiquement un historique de transactions réalistes
+Git	>>> Travailler en branches, merger et résoudre un conflit
