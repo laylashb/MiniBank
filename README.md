@@ -41,3 +41,7 @@ JavaScript	>>> Améliorer l’UX : validation, confirmation, filtre dynamique
 Python	>>> Générer automatiquement un historique de transactions réalistes
 
 Git	>>> Travailler en branches, merger et résoudre un conflit
+
+
+
+## Lancer le projet 
