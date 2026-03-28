@@ -106,3 +106,17 @@ MiniBank/
 │  └─ data.sql    # Données initiales
 ├─ docker-compose.yml
 └─ README.md
+
+
+
+
+
+
+##Liens utilisés
+
+### Docker
+
+### Python
+pythhttps://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts >>>>>>>>pour construire le script)
+https://realpython.com/python-random/ >>>>>>>>>(pour générer de la data aléatoires soit les 50 transactions)
+
