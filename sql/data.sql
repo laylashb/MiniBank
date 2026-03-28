@@ -9,7 +9,7 @@ INSERT INTO clients (nom, prenom, email, ville) VALUES
 INSERT INTO comptes (numero_compte, solde, client_id) VALUES
 ('FR1234567890', 5.20, 1),
 ('FR0987654321', 50000.46, 2),
-('FR987654876321', 5000000.10, 3),
+('FR6885548769', 800000.10, 3),
 ('FR1122334455', 100.00, 4);
 
 -- Transactions
