@@ -112,14 +112,30 @@ MiniBank/
 
 
 
-##Liens utilisés
+## Liens utilisés
+
+### 
+https://learnxinyminutes.com/css/
+
+### Git
+- https://docs.github.com
+- https://skills.github.com
+
 
 ### Docker
-liens : 
 
+
+### PHP
+- https://www.youtube.com/watch?v=CQF5bf6z0jE
 
 
 ### Python
 liens : 
-- https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts >>>>>>>>pour construire le script)
-- https://realpython.com/python-random/ >>>>>>>>>(pour générer de la data aléatoires soit les 50 transactions)
+- https://learnxinyminutes.com/python/
+
+
+- https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts 
+>>>>>>>>pour construire le script
+
+- https://realpython.com/python-random/ 
+>>>>>>>>(pour générer de la data aléatoires soit les 50 transactions)
