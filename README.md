@@ -3,8 +3,9 @@
 </h1>
 
 <p align="center">
-  <img width="6912" height="3456" alt="MiniBank" src="https://github.com/user-attachments/assets/11bec4af-211b-4d70-936a-e6cdf2b2d73b" />
+  <img width="6912" height="3456" alt="MiniBAnk" src="https://github.com/user-attachments/assets/cd183637-307a-4b25-aa3e-c36db48fc489" />
 </p>
+
 
 <h2 align="center">
   Bienvenue sur MiniBank !
