@@ -1,16 +1,4 @@
 /* =============================================
-   MINIBANK — app.js
-   Auteur : Membre 3 (Front-end)
-
-   Ce fichier contient les 3 fonctionnalités
-   JavaScript obligatoires :
-   1. Confirmation avant suppression (modale)
-   2. Validation des formulaires
-   3. Filtre de recherche en direct
-   ============================================= */
-
-
-/* =============================================
    1. MODALE DE CONFIRMATION AVANT SUPPRESSION
    =============================================
    Quand on clique sur un bouton "Supprimer",
