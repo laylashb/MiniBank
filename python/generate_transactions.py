@@ -11,7 +11,7 @@ comptes = {
 
 transactions = []
 
-# Date de départ
+# Date de départ des transactions
 date_actuelle = datetime(2024, 1, 1)
 
 # Générer 50 transactions
@@ -33,11 +33,11 @@ for i in range(50):
     else:
         comptes[compte_id] -= montant
 
-    # Date cohérente (augmente progressivement)
+    # pour qu'on 
     date_actuelle += timedelta(days=random.randint(1, 2))
 
-    # Génération de la requête SQL
-    requete = (
+    requete = (                    # la requête SQL
+
         f"INSERT INTO transactions (type, montant, date, compte_id) VALUES "
         f"('{type_transaction}', {montant}, '{date_actuelle.strftime('%Y-%m-%d %H:%M:%S')}', {compte_id});"
     )

@@ -6,6 +6,9 @@
   <img width="6912" height="3456" alt="MiniBank" src="https://github.com/user-attachments/assets/11bec4af-211b-4d70-936a-e6cdf2b2d73b" />
 </p>
 
+
+
+
 <h2 align="center">
   Bienvenue sur MiniBank !
 </h2>
@@ -133,9 +136,12 @@ https://learnxinyminutes.com/css/
 liens : 
 - https://learnxinyminutes.com/python/
 
-
 - https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts 
 >>>>>>>>pour construire le script
 
 - https://realpython.com/python-random/ 
 >>>>>>>>(pour générer de la data aléatoires soit les 50 transactions)
+
+
+https://docs.python.org/3/library/random.html
+
