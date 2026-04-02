@@ -16,7 +16,7 @@
 
 > Dans le cadre de : Prépa Mastère IPSSI
 
-> Cours supervisé par : Mr. Touil
+> Cours supervisé par : Mr. Touil et Mr. Duterval
 
 
 ## Objectifs
@@ -34,32 +34,53 @@ Docker >>> Conteneuriser et lancer l’application en une seule commande
 
 SQL	>>> Concevoir un schéma relationnel propre et écrire des requêtes pertinentes
 
-PHP + CRUD	>>> Implémenter les opérations Create / Read / Update / Delete
+PHP + CRUD	>>> Implémenter les opérations Create / Read / Update / Delete avec un modèle MCV(Model Controller View)
 
 JavaScript	>>> Améliorer l’UX : validation, confirmation, filtre dynamique
 
 Python	>>> Générer automatiquement un historique de transactions réalistes
 
-Git	>>> Travailler en branches, merger et résoudre un conflit
+Git/GitHub	>>> Travailler en branches, merger et résoudre un conflit
 
 
 ## Prérequis
-Docker Compose
+Docker Desktop
+Visual Studio Code
 
 
 ## Installation / Lancement
 
 
-Avant de débuter, il faut s'assurer d'avoir installé Docker Compose.
+Avant de débuter, il faut s'assurer d'avoir installé Docker Desktop et Visual Studio Code.
 
-1. Cloner le dépôt
-2. dans le terminal, faire git clone https://github.com/laylashb/MiniBank.git
-3. puis cd MiniBank
-4. Démarrer l’environnement complet
-5. Lancer docker compose up -d
+1. Cloner le dépôt en local : dans le terminal (Git Bash) de Visual Studio Code, faire git clone https://github.com/laylashb/MiniBank.git
+2. Puis faire cd MiniBank
+3. Démarrer l’environnement complet :
+-  Toujours dans le terminal, faire docker build .
+-  Puis une fois terminé, faire docker compose up -d
+4. Ouvrir Docker Desktop, vérifier que le container est bien présent et l'allumer manuellement
 
+5. Il faut désormais initialiser la base de données :
+    Dans le terminal, faire :
+    - docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql
+    - docker exec -i minibank-db mysql -u root -proot minibank < sql/data.sql
 
-    Cette commande crée et démarre :
+  Pour vérifier que le schema et la data ont bien été enregistrés dans la base de données, il faut faire toujours dans le terminal :
+  - docker exec -it minibank_db mariadb -u root -proot_password
+  Une fois dans la base de données, faire toujours dans le terminal :
+  - use minibank_db;
+  - puis show tables;
+  Vous devriez voir s'afficher les tables -> tout est Ok !
+    
+    ⚠️ A SAVOIR !!
+    Il se peut que la commande docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql ne permette pas d'insérer toute les tables d'un coup.
+    Dans ce cas, il faudra exécuter cette commande pour chaque table en effaçant les 2 autres tables.
+    Vous allez donc devoir exécuter cette commande 3 fois, avec 1 TABLE DIFFERENTE UNIQUEMENT à chaque fois.
+
+Bravo ! Votre environnement est maintenant fonctionnel !
+
+                            Explications des commandes :
+Cette commande crée et démarre :
 
 le container MySQL (minibank-db)
 le container PHP/Apache (minibank-web)
