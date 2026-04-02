@@ -22,7 +22,7 @@ services:
       - "9000"
     depends_on:
       - db
-
+ 
   db:
     image: mariadb:10.6
     container_name: minibank_db
@@ -33,10 +33,9 @@ services:
       MYSQL_PASSWORD: password
     volumes:
       - db_data:/var/lib/mysql
-      - ./sql/schema.sql:/docker-entrypoint-initdb.d/schema.sql
-      - ./sql/data.sql:/docker-entrypoint-initdb.d/data.sql
     ports:
       - "3306:3306"
 
 volumes:
   db_data:
+
