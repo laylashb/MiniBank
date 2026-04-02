@@ -62,8 +62,8 @@ Avant de débuter, il faut s'assurer d'avoir installé Docker Desktop et Visual 
 
 5. Il faut désormais initialiser la base de données :
     Dans le terminal, faire :
-    - docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql
-    - docker exec -i minibank-db mysql -u root -proot minibank < sql/data.sql
+    - docker exec -i minibank_db mariadb -u root -proot_password minibank_db < sql/schema.sql
+    - docker exec -i minibank_db mariadb -u root -proot_password minibank_db < sql/data.sql
 
   Pour vérifier que le schema et la data ont bien été enregistrés dans la base de données, il faut faire toujours dans le terminal :
   - docker exec -it minibank_db mariadb -u root -proot_password
