@@ -58,7 +58,7 @@ Avant de débuter, il faut s'assurer d'avoir installé Docker Desktop et Visual 
 3. Démarrer l’environnement complet :
 -  Toujours dans le terminal, faire docker build .
 -  Puis une fois terminé, faire docker compose up -d
-4. Ouvrir Docker Desktop, vérifier que le container est bien présent et l'allumer manuellement
+-  Enfin, faire docker un minibank (ou ouvrir Docker Desktop, vérifier que le container est bien présent et l'allumer manuellement)
 
 5. Il faut désormais initialiser la base de données :
     Dans le terminal, faire :
@@ -76,31 +76,42 @@ Avant de débuter, il faut s'assurer d'avoir installé Docker Desktop et Visual 
     Il se peut que la commande docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql ne permette pas d'insérer toute les tables d'un coup.
     Dans ce cas, il faudra exécuter cette commande pour chaque table en effaçant les 2 autres tables.
     Vous allez donc devoir exécuter cette commande 3 fois, avec 1 TABLE DIFFERENTE UNIQUEMENT à chaque fois.
+    
+    ⚠️ Important : si vous réinjectez les données, assurez-vous que les tables ne contiennent pas de doublons ou d’IDs incorrects pour éviter les erreurs de FOREIGN KEYS.
 
 Bravo ! Votre environnement est maintenant fonctionnel !
 
                             Explications des commandes :
-Cette commande crée et démarre :
-
-le container MySQL (minibank-db)
-le container PHP/Apache (minibank-web)
-
-Dans le terminal, pour initialiser la base de données :
-  docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql
-  docker exec -i minibank-db mysql -u root -proot minibank < sql/data.sql
-
-⚠️ Important : si vous réinjectez les données, assurez-vous que les tables ne contiennent pas de doublons ou d’IDs incorrects pour éviter les erreurs de FOREIGN KEYS.
-
+- git clone https://github.com/laylashb/MiniBank.git
+   permet d'importer localement le dossier de l'application
+- cd MiniBank
+   permet de se déplacer dans le dossier de l'application
+- docker build .
+   permet de construire les images Docker à partir du Dockerfile
+- docker compose up -d
+   permet de lancer le container
+- docker run minibank
+   permet de démarrer le container
+- docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql
+   permet d'insérer le schema sql dans la base de données
+- docker exec -i minibank-db mysql -u root -proot minibank < sql/data.sql
+   permet d'insérer les données dans la base de données
+- docker exec -it minibank_db mariadb -u root -proot_password
+   permet d'entrer dans la base de données directement 
+- use minibank_db;
+   permet d'utiliser la base de données
+- puis show tables;
+   permet de voir les tables présentes dans la base de données
 
 ## Utilisation
 
-L’interface web est accessible sur http://localhost:80.
+L’interface web est accessible sur http://localhost:8080.
 
 Les opérations possibles :
 - Ajouter un client
 - Créer un compte pour un client
 - Faire des dépôts/retraits (transactions)
-- Vous pouvez consulter directement les tables dans MySQL :
+- Vous pouvez consulter directement les tables dans la base de données :
       SELECT * FROM clients;
       SELECT * FROM comptes;
       SELECT * FROM transactions;
@@ -120,20 +131,49 @@ Faites vos modifications, puis commit & push :
 ## Structure du projet 
 
 MiniBank/
-├─ css/           # Styles CSS
-├─ php/           # Pages PHP de l'application
-├─ sql/
-│  ├─ schema.sql  # Structure des tables
-│  └─ data.sql    # Données initiales
-├─ docker-compose.yml
-└─ README.md
+- nginx/
+  default.conf
+- sql/
+  schema.sql
+  data.sql
+- src/
+  config/
+    database.php
+  controllers
+    clientsController.php
+    comptesController.php
+    transactionsController.php
+  models/
+    clientsModel.php
+    comptesModel.php
+    transactionsModel.php
+  public/
+    index.php
+    css/
+      style.css
+    js/
+      app.js
+  views/
+    home.php
+    clients/
+      create.php
+      delete.php
+      edit.php
+      index.php
+    comptes/
+      create.php
+      index.php
+    transactions/
+      create.php
+      index.php
+    .gitignore
+    .htaccess
+    docker-compose.yml
+    Dockerfile
+    php.ini
 
 
-
-
-
-
-##Liens utilisés
+                                   ## Liens utilisés
 
 ### Git
 - https://docs.github.com
@@ -142,8 +182,6 @@ MiniBank/
 
 ### Docker
 liens : 
-
-
 
 ### Python
 liens : 
