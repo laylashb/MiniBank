@@ -47,8 +47,7 @@
             <form method="POST" action="index.php?action=client_delete&id=<?= $data['id'] ?>">
                 <div class="form-actions">
                     <a href="index.php?action=clients" class="btn btn-secondary">Annuler</a>
-                    <button type="submit" class="btn btn-danger">onclick="return confirmerSuppressionClient('<?= htmlspecialchars($data['nom']) ?>')">
-    🗑 Oui, supprimer</button>
+                    <button type="submit" class="btn btn-danger">🗑 Oui, supprimer</button>
                 </div>
             </form>
 
@@ -59,6 +58,6 @@
     <footer>
         <p>MiniBank &copy; 2026 — Projet scolaire</p>
     </footer>
-    <script src="/js/validation.js"></script>
+
 </body>
 </html>

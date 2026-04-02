@@ -28,9 +28,8 @@
         <div class="card" style="max-width: 600px;">
 
             <form method="POST"
-                action="index.php?action=client_update&id=<?= $data['id'] ?>"
-                data-validate="client"
-                onsubmit="return validerFormulaireClient()">
+                  action="index.php?action=client_update&id=<?= $data['id'] ?>"
+                  data-validate="client">
 
                 <!-- Nom et Prénom côte à côte -->
                 <div class="form-row">
@@ -88,6 +87,6 @@
     </div>
 
     <script src="/js/app.js"></script>
-    <script src="/js/validation.js"></script>
+
 </body>
 </html>
