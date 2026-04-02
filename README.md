@@ -7,8 +7,6 @@
 </p>
 
 
-
-
 <h2 align="center">
   Bienvenue sur MiniBank !
 </h2>
