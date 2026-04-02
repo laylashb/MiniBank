@@ -44,8 +44,8 @@ Git/GitHub	>>> Travailler en branches, merger et résoudre un conflit
 
 
 ## Prérequis
-Docker Desktop
-Visual Studio Code
+- Docker Desktop
+- Visual Studio Code
 
 
 ## Installation / Lancement
