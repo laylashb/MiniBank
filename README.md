@@ -6,7 +6,6 @@
   <img width="6912" height="3456" alt="MiniBAnk" src="https://github.com/user-attachments/assets/cd183637-307a-4b25-aa3e-c36db48fc489" />
 </p>
 
-
 <h2 align="center">
   Bienvenue sur MiniBank !
 </h2>
@@ -94,3 +93,52 @@ Faites vos modifications, puis commit & push :
   git add .
   git commit -m "Description des modifications"
   git push origin ma-branche
+
+
+
+## Structure du projet 
+
+MiniBank/
+├─ css/           # Styles CSS
+├─ php/           # Pages PHP de l'application
+├─ sql/
+│  ├─ schema.sql  # Structure des tables
+│  └─ data.sql    # Données initiales
+├─ docker-compose.yml
+└─ README.md
+
+
+
+
+
+
+## Liens utilisés
+
+### 
+https://learnxinyminutes.com/css/
+
+### Git
+- https://docs.github.com
+- https://skills.github.com
+
+
+### Docker
+
+
+### PHP
+- https://www.youtube.com/watch?v=CQF5bf6z0jE
+
+
+### Python
+liens : 
+- https://learnxinyminutes.com/python/
+
+- https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts 
+>>>>>>>>pour construire le script
+
+- https://realpython.com/python-random/ 
+>>>>>>>>(pour générer de la data aléatoires soit les 50 transactions)
+
+
+https://docs.python.org/3/library/random.html
+
