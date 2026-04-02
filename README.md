@@ -73,7 +73,7 @@ Avant de débuter, il faut s'assurer d'avoir installé Docker Desktop et Visual 
   Vous devriez voir s'afficher les tables -> tout est Ok !
     
     ⚠️ A SAVOIR !!
-    Il se peut que la commande docker exec -i minibank-db mysql -u root -proot minibank < sql/schema.sql ne permette pas d'insérer toute les tables d'un coup.
+    Il se peut que la commande docker exec -i minibank_db mysql -u root -proot minibank < sql/schema.sql ne permette pas d'insérer toute les tables d'un coup.
     Dans ce cas, il faudra exécuter cette commande pour chaque table en effaçant les 2 autres tables.
     Vous allez donc devoir exécuter cette commande 3 fois, avec 1 TABLE DIFFERENTE UNIQUEMENT à chaque fois.
     
@@ -132,45 +132,45 @@ Faites vos modifications, puis commit & push :
 
 MiniBank/
 - nginx/
-  default.conf
+  - default.conf
 - sql/
-  schema.sql
-  data.sql
+  - schema.sql
+  - data.sql
 - src/
-  config/
-    database.php
-  controllers
-    clientsController.php
-    comptesController.php
-    transactionsController.php
-  models/
-    clientsModel.php
-    comptesModel.php
-    transactionsModel.php
-  public/
-    index.php
-    css/
-      style.css
-    js/
-      app.js
-  views/
-    home.php
-    clients/
-      create.php
-      delete.php
-      edit.php
-      index.php
-    comptes/
-      create.php
-      index.php
-    transactions/
-      create.php
-      index.php
-    .gitignore
-    .htaccess
-    docker-compose.yml
-    Dockerfile
-    php.ini
+  - config/
+    - database.php
+  - controllers
+    - clientsController.php
+    - comptesController.php
+    - transactionsController.php
+  - models/
+    - clientsModel.php
+    - comptesModel.php
+    - transactionsModel.php
+  - public/
+    - index.php
+    - css/
+      - style.css
+    - js/
+      - app.js
+  - views/
+    - home.php
+    - clients/
+      - create.php
+      - delete.php
+      - edit.php
+      - index.php
+    - comptes/
+      - create.php
+      - index.php
+    - transactions/
+      - create.php
+      - index.php
+    - .gitignore
+    - .htaccess
+    - docker-compose.yml
+    - Dockerfile
+    - php.ini
 
 
                                    ## Liens utilisés
